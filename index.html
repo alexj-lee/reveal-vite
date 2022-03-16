@@ -10,26 +10,140 @@
   <link rel="stylesheet" href="plugin/customcontrols/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-  <title> template </title>
+  <title> GG rotation </title>
 </head>
 
 <body>
   <div class="reveal">
     <div class="slides">
+      <!-- title slide -->
       <section>
-        <h1>Reveal.js + Vite</h1>
-        First slide!
+        <h1>Goodarzi + Gilbert lab rotation</h1>
+        Alex Lee
       </section>
-      <section>Second!</section>
+
+      <!-- -->
       <section>
-        <img src="/screenshot.png" />
+        <h2> Gene interactions are everywhere! </h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Epistatic_hair.png">
       </section>
+
+      <!-- -->
       <section>
-        hi
-        bye
+        <h2> But, how do we find gene interactions in an unbiased way? </h2>
+        <div class="multiCol">
+          <div class="bigCol">
+            <img src="geneinteraction-yeast.png"
+              style="height: auto; width: 130%; max-width: 120%; position: relative; left: -10rem">
+          </div>
+
+          <div class="littleCol">
+            <br>
+            <br>
+            <ul>
+              <li> In the recent past, main experimental method was yeast KO with an output of growth phenotype </li>
+              <li> Geared around the search for synthetic lethal pairs of interacting genes (GIs) </li>
+            </ul>
+          </div>
+        </div>
       </section>
+
+      <!---->
       <section>
-        something
+        <h2> CRISPR-based methods allowed for larger-scale combinatorial GI mapping </h2>
+        <div class="multiCol">
+          <div class="col">
+            <div class="r-stack">
+              <img src="geneinteraction-crispr.png" style="height: auto; width: 115%; max-width: 115%"
+                class="fragment fade-out">
+              <img src="gimap-horlbeck.png" class="fragment" style="transform: scale(1.2,1.2)">
+            </div>
+          </div>
+
+          <div class="col">
+            <ul style="position: relative; left: 5rem">
+              <br>
+              <br>
+              <li> CRISPRi/a, now Perturb-seq, allow for high throughput GI mapping with high coverage of genome </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2> CRISPR screening is laborious </h2>
+
+        <br>
+        <br>
+        <div style="transform: scale(1.1, 1.1)">
+          $20,000\ \mathrm{genes}\ *\ 5\ \mathrm{guides\ per\ gene}\ =\ 100,000\ \mathrm{guides}$
+          <br>
+          $100,000\ \mathrm{guides}\ *\ 1000\mathrm{X\ coverage\ for\ sequencing}\ =\ 100,000,000\ \mathrm{cells\ in\
+          screen}$
+          <br>
+          <br>
+
+          <img src="bossreplicates.jpg" class="fragment fade-in" data-fragment-index="1" style="padding: 0; margin: 0">
+          <p style="padding: 0; margin: 0" class="fragment fade-in-then-out" data-fragment-index="1"> $100,000,000\
+            \mathrm{cells}\ *\ \mathrm{n\ replicates}\
+            =\
+            $ <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/5_large.png?v=1571606116"
+              style="width: 3%; height: auto; position: relative; top: 2rem"> </p>
+
+        </div>
+      </section>
+
+      <section>
+        <h2> How could you speed this process up? </h2>
+        <div class="multiCol">
+          <div class="col">
+            <div class="r-stack">
+              <img src="completion-pt1.png" style="height: auto; width: 50%; max-width: 120%" class="fragment fade-out">
+              <img src="completion-pt2.png" class="fragment fade-in-then-out" style="height: auto; width: 40%">
+              <img src="completion-pt3.png" class="fragment fade-in" style="height: auto; width: 80%">
+            </div>
+
+          </div>
+          <div class="col">
+            <ul>
+              <br>
+              <br>
+              <li> Tom Norman showed that matrix completion approaches could be used to predict interactions from a
+                sparse sample</li>
+              <li> How does this look in a new sample of data? </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2> Predicting on a new dataset from Gilbert lab </h2>
+        <div class="multiCol">
+          <div class="col">
+            <div class="r-stack" style="position: relative; top: -10rem">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5bff2e82b40b9dd83d79f536/1543521116514-POD5FD05EFZOVBDRU8Z7/image-asset.jpeg"
+                class="fragment fade-out" style="width: auto; height: 50%">
+              <img src="perturb-screen.png" class="fragment fade-in" style="width: auto; height: 50%; max-height: 100%">
+              <br>
+              <br>
+            </div>
+          </div>
+          <div class="col">
+            <br>
+            <br>
+            <br>
+            <ul>
+              <li> Ben Herken interested in DNA damage repair </li>
+              <li> Experiment using ataxia telangiectasia Rad3-related kinase (ATR) inhibitor ceralasertib </li>
+              <br>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+
       </section>
     </div>
   </div>
