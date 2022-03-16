@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reveal Vite</title>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <h1>Reveal.js + Vite</h1>
-          First slide!
-        </section>
-        <section>Second!</section>
-        <section>
-          <img src="/screenshot.png" />
-        </section>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="plugin/pointer/pointer.css" />
+  <link rel="stylesheet" href="plugin/chalkboard/style.css">
+  <link rel="stylesheet" href="plugin/customcontrols/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <title> template </title>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Reveal.js + Vite</h1>
+        First slide!
+      </section>
+      <section>Second!</section>
+      <section>
+        <img src="/screenshot.png" />
+      </section>
+      <section>
+        hi
+        bye
+      </section>
+      <section>
+        something
+      </section>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+  </div>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/chalkboard/plugin.js"></script>
+  <script src="plugin/customcontrols/plugin.js"></script>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
